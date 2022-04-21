@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './Nav/Nav';
-import Home from './Home/Home';
-import Battle from './Battle/Battle';
-import Popular from './Popular/Popular';
-import NotFoundPage from './NotFoundPage';
+import * as styles from './App.module.css';
+import Nav from '../Nav/Nav';
+import Home from '../Home/Home';
+import Battle from '../Battle/Battle';
+import Popular from '../Popular/Popular';
+import NotFoundPage from '../NotFoundPage';
 
 const App = () => {
   return (
     <Router>
-      <div className='container'>
+      <div className={styles.container}>
         <Nav />
         <Switch>
           <Route exact path='/'>

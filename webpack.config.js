@@ -10,20 +10,8 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
-        ],
-      },
       { test: /\.(js)$/, use: 'babel-loader' },
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
     ],
   },
   devServer: {

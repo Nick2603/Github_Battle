@@ -3,7 +3,6 @@ import React, { memo } from "react";
 export const SelectedLanguages = memo(
   ({ selectedLanguage, selectLanguageHandler }) => {
     const languages = ["All", "Javascript", "Ruby", "Java", "CSS", "Python"];
-    console.log("S render");
 
     return (
       <ul className="languages">

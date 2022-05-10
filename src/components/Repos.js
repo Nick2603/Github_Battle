@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 
 export const Repos = memo(({ repos }) => {
-  console.log("Repos");
   return (
     <ul className="popular-list">
       {repos.map((repo, index) => (

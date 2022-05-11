@@ -1,8 +1,8 @@
 import React from "react";
 import { SelectedLanguages } from "./SelectedLanguages";
-import { fetchPopularRepos } from "../utils/api";
+import { fetchPopularRepos } from "../../utils/api";
 import { Repos } from "./Repos";
-import Loader from "./Loader";
+import Loader from "../Loader";
 
 class Popular extends React.PureComponent {
   constructor(props) {
